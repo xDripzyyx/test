@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Bloodline Rust — competitive 2x and 3x Rust servers.">
+<title>Bloodline Rust | Survive the Wipe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="scanlines"></div>
+<header>
+  <a class="logo" href="#top"><span>BL</span><b>BLOODLINE</b></a>
+  <nav><a href="#servers">Servers</a><a href="#leaderboard">Leaderboard</a><a href="#features">Features</a><a href="#rules">Rules</a><a href="#faq">FAQ</a><a href="https://bloodline-rust.paynow.store/" target="_blank">Store</a></nav>
+  <div style="display:flex;gap:8px"><a class="discord" href="https://discord.gg/uJvjg8PWAp" target="_blank">DISCORD</a><a class="discord" href="https://bloodline-rust.paynow.store/" target="_blank">STORE</a></div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="blood"></div><div class="grid"></div>
+  <div class="hero-copy">
+    <div class="tag"><i></i> RUST • COMMUNITY • PVP</div>
+    <h1>WELCOME TO<br><em>BLOODLINE</em></h1>
+    <p>Fast progression. Active PvP. No mercy. Build your base, find your team, and fight for your place in the Bloodline.</p>
+    <div class="actions"><a class="btn red" href="#servers">PLAY NOW <span>→</span></a><a class="btn red leaderboard-btn" href="#leaderboard">LEADERBOARD <span>→</span></a><a class="btn ghost" href="https://discord.gg/" target="_blank">DISCORD</a></div>
+    <div class="mini-status"><span class="online"></span> SERVERS ONLINE <strong>•</strong> 2x + 3x</div>
+  </div>
+  <div class="hero-stamp">EST.<br><b>Jun 9 2026</b></div>
+</section>
+
+<section id="servers" class="section servers photo-section">
+  <div class="kicker">01 / CHOOSE YOUR FIGHT</div>
+  <div class="heading-row"><h2>JOIN THE<br><em>BLOODLINE.</em></h2><p>Pick your server and jump straight into the action.</p></div>
+  <div class="server-grid">
+    <article class="server-card featured">
+      <div class="server-top"><span class="server-type">2X</span><span class="live"><i></i> ONLINE</span></div>
+      <h3>BLOODLINE RUST <span>2X</span></h3><p>Balanced progression with boosted loot and nonstop PvP.</p>
+      <code>client.connect 135.148.15.176:20002</code>
+      <div class="card-actions"><button data-ip="client.connect 135.148.15.176:20002">COPY IP</button><button class="connect" data-ip="135.148.15.176:20002">CONNECT</button></div>
+    </article>
+    <article class="server-card">
+      <div class="server-top"><span class="server-type">3X</span><span class="live"><i></i> ONLINE</span></div>
+      <h3>BLOODLINE RUST <span>3X</span></h3><p>Faster progression for players who want to get geared and fight.</p>
+      <code>client.connect 135.148.172.229:28560</code>
+      <div class="card-actions"><button data-ip="client.connect 135.148.172.229:28560">COPY IP</button><button class="connect" data-ip="135.148.172.229:28560">CONNECT</button></div>
+    </article>
+  </div>
+</section>
+
+<section id="leaderboard" class="section leaderboard-section photo-section">
+  <div class="kicker">02 / SERVER LEADERBOARD</div>
+  <div class="heading-row">
+    <h2>FIGHT FOR<br><em>THE TOP.</em></h2>
+    <div class="leaderboard-controls">
+      <label for="leaderboardServer">SERVER</label>
+      <select id="leaderboardServer">
+        <option value="bloodline-2x">BLOODLINE RUST 2X</option>
+        <option value="bloodline-3x">BLOODLINE RUST 3X</option>
+      </select>
+      <div class="leaderboard-meta"><span id="leaderboardTotal">0 PLAYERS</span><span id="leaderboardUpdated">NOT UPDATED</span></div>
+    </div>
+  </div>
+  <div class="leaderboard-wrap">
+    <div class="leaderboard-table">
+      <div class="leaderboard-row leaderboard-head">
+        <div>PLAYER</div><div>KILLS</div><div>DEATHS</div><div>K/D</div><div>HEADSHOTS</div><div>PLAYTIME</div>
+      </div>
+      <div id="leaderboardBody">
+        <div class="leaderboard-loading">LOADING LEADERBOARD...</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="section features photo-section">
+  <div class="kicker">03 / WHY BLOODLINE</div><h2>BUILT FOR<br><em>RUST PLAYERS.</em></h2>
+  <div class="feature-grid">
+    <div><b>01</b><h3>VIP KITS</h3><p>Support the server and get useful kits to kick off your wipe.</p></div>
+    <div><b>02</b><h3>FASTER SMELT</h3><p>Less time watching furnaces. More time fighting.</p></div>
+    <div><b>03</b><h3>TIER 1 BPs</h3><p>Get into the action faster with Tier 1 blueprints unlocked.</p></div>
+    <div><b>04</b><h3>ACTIVE COMMUNITY</h3><p>Find teammates, enemies, and events through Discord.</p></div>
+  </div>
+</section>
+
+<section class="wipe photo-section">
+  <div class="wipe-inner"><div class="kicker">04 / NEXT WIPE</div><h2>READY TO<br><em>START OVER?</em></h2>
+  <div class="countdown"><div><b id="d">00</b><small>DAYS</small></div><div><b id="h">00</b><small>HOURS</small></div><div><b id="m">00</b><small>MINUTES</small></div><div><b id="s">00</b><small>SECONDS</small></div></div>
+  <p id="wipeText">Set your next wipe date in script.js</p></div>
+</section>
+
+<section id="rules" class="section rules">
+  <div class="kicker">05 / SERVER RULES</div><div class="heading-row"><h2>PLAY FAIR.<br><em>PLAY HARD.</em></h2></div>
+  <div class="rule-grid">
+    <div><b>01</b><h3>NO CHEATING</h3><p>No cheats, scripts, exploits, or unauthorized software.</p></div>
+    <div><b>02</b><h3>NO HARASSMENT</h3><p>No threats, hate speech, or targeted harassment.</p></div>
+    <div><b>03</b><h3>NO EXPLOITING</h3><p>Report bugs. Do not abuse them or intentionally lag the server.</p></div>
+    <div><b>04</b><h3>RESPECT STAFF</h3><p>Follow staff instructions and the Discord rules.</p></div>
+  </div>
+</section>
+
+<section id="faq" class="section faq"><div class="kicker">06 / FAQ</div><h2>NEED TO<br><em>KNOW MORE?</em></h2>
+<div class="faq-list">
+<details><summary>How do I connect?</summary><p>Copy the IP above, open Rust, press F1, and use <code>client.connect YOUR-IP:PORT</code>.</p></details>
+<details><summary>Where do I get VIP?</summary><p>Put your Tebex/store URL in <code>script.js</code> and the STORE button will link directly to it.</p></details>
+<details><summary>Where can I get support?</summary><p>Join the Bloodline Discord and open a support ticket.</p></details>
+</div></section>
+
+<section class="final"><div><div class="kicker">THE WIPE IS WAITING</div><h2>JOIN THE<br><em>BLOODLINE.</em></h2></div><div class="actions"><a class="btn red" href="https://discord.gg/uJvjg8PWAp" target="_blank">JOIN DISCORD →</a><a class="btn ghost leaderboard-btn-final" href="#leaderboard">VIEW LEADERBOARD →</a><a class="btn ghost" href="https://bloodline-rust.paynow.store/" target="_blank">OPEN STORE →</a></div></section>
+</main>
+<footer><div class="logo"><span>BL</span><b>BLOODLINE</b></div><p>© 2026 Bloodline Rust • Not affiliated with Facepunch Studios.</p></footer>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body></html>
